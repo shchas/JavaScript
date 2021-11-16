@@ -8,7 +8,7 @@
 
 // console.log(typeof(answers));
 
-"use strict";
+//"use strict";
 
 // const category = 'toys';
 
@@ -17,5 +17,5 @@
 // const user = "Ivan";
 // alert(`Привет, ${user}`);
 
-console.log('arr' + " - object");
-console.log(4 + +"5");
+//console.log('arr' + " - object");
+//console.log(4 + +"5");
