@@ -1,4 +1,4 @@
-//const answer = prompt("Вам есть 18?", "18");
+/*//const answer = prompt("Вам есть 18?", "18");
 //console.log(answer);
 //const answers = [];
 
@@ -18,4 +18,8 @@
 // alert(`Привет, ${user}`);
 
 //console.log('arr' + " - object");
-//console.log(4 + +"5");
+//console.log(4 + +"5");*/
+
+/* Домашнее задание */
+
+const numberOfFilms = prompt("Сколько фильмов вы посмотрели?","18");
