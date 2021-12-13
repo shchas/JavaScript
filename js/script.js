@@ -81,35 +81,61 @@
 //     console.log(i);
 // }
 
-"use strict";
+// "use strict";
 
-let num = 20;
+// let num = 20;
 
-function showFirstMessage(text) {
-    console.log(text);
-    console.log(num);
-}
+// function showFirstMessage(text) {
+//     console.log(text);
+//     console.log(num);
+// }
 
-showFirstMessage('Hello world!');
-console.log(num);
+// showFirstMessage('Hello world!');
+// console.log(num);
 
-function calc(a, b) {
-    return (a + b);
-}
-console.log(calc(4, 3));
-console.log(calc(5, 6));
-console.log(calc(10, 6));
+// function calc(a, b) {
+//     return (a + b);
+// }
+// console.log(calc(4, 3));
+// console.log(calc(5, 6));
+// console.log(calc(10, 6));
 
-function ret() {
-    let num = 50;
-    return num;
-}
+// function ret() {
+//     let num = 50;
+//     return num;
+// }
 
-const anotherNum = ret();
-console.log(anotherNum);
+// const anotherNum = ret();
+// console.log(anotherNum);
 
-const logger = function() {
-    console.log("Hello");
-};
+// const logger = function() {
+//     console.log("Hello");
+// };
 
-// const calc = (a, b) => a + b ;
+// // const calc = (a, b) => a + b ;
+
+// const str = 'test';
+// const arr = [1, 2, 4];
+
+// //console.log(str[2] = 'd');
+// //console.log(str.toUpperCase());
+// console.log(str.toLowerCase());
+
+// console.log(str);
+
+// const fruit = 'Some fruit';
+
+// console.log(fruit.indexOf('fruit'));
+
+// const logg = 'Hello world!';
+// console.log(logg.slice(-6, -1));
+
+// console.log(logg.substr(6,5));
+
+const num = 12.2;
+console.log(Math.round(num));
+
+const test = '12.2px';
+console.log(parseInt(test));
+console.log(parseFloat(test));
+
