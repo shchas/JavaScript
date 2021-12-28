@@ -1,0 +1,71 @@
+<script type="text/javascript">
+	function cdom() {
+		var costtable = [
+			[29.8, 27.8, 26.1, 25.0, 24.3, 1],
+			[30.4, 28.4, 26.6, 25.5, 24.8, 1.02],
+			[31.0, 28.9, 27.1, 26.0, 25.3, 1.04],
+			[31.3, 29.2, 27.4, 26.2, 25.5, 1.05],
+			[31.4, 29.3, 27.4, 26.3, 25.6, 1.07],
+			[32.23, 30.1, 28.2, 27.1, 26.3, 1.10],
+			[33.7, 31.5, 29.4, 28.3, 27.5, 1.15],
+			[35.2, 32.9, 30.7, 29.5, 28.7, 1.2],
+			[36.6, 34.25, 32, 30.7, 29.9, 1.25],
+			[39.6, 37, 34.6, 33.2, 32.3, 1.35]
+		];
+		geo = document.getElementById('geohome').value;
+        ph = document.getElementById('pricehome').value;
+
+		if (document.getElementById('squarehome').value) {
+			sq = document.getElementById('squarehome').value;
+			if (sq >= 108)
+				skid = 4;
+			if (sq < 108)
+				skid = 3;
+			if (sq < 90)
+				skid = 2;
+			if (sq < 72)
+				skid = 1;
+			if (sq < 54)
+				skid = 0;
+            
+             //p = costtable[geo][skid] * sq * 1000;
+			//p = (825 + 28.3 * sq) * costtable[geo][5] * 1000;
+
+			p = (1300 + 45 * sq) * costtable[geo][5] * 1000;
+			document.getElementById('costhome').innerText = 'Примерная цена дома "под ключ": ' + p + ' р.';
+		} else
+			document.getElementById('costhome').innerText = "Введите площадь дома";
+	}
+</script>
+
+<select id="pricehome">
+	<option value="0">Каркасный дом</option>
+	<option value="1">Дом из газобетона</option>
+</select>
+<p>
+	<input id="squarehome" type="text" />
+</p>
+<p><span style="color: #000000;">Площадь дома, кв. м.</span></p>
+<select id="geohome">
+	<option value="0">г. Благовещенск</option>
+	<option value="0">Благовещенский район</option>
+	<option value="1">Тамбовский, Ивановский</option>
+	<option value="2">Константиновский, Белогорский</option>
+	<option value="2">Октябрьский, Михайловский</option>
+	<option value="3">Серышевский, Завитинский</option>
+	<option value="4">Бурейский, Ромненский</option>
+	<option value="4">Свободненский</option>
+	<option value="5">Шимановский, Мазановский</option>
+	<option value="5">Архаринский</option>
+	<option value="6">Магдагачинский</option>
+	<option value="7">Зейский</option>
+	<option value="8">Селемджинский, Сковородинский</option>
+	<option value="9">Тындинский</option>
+</select>
+<p></p>
+
+<p><br />
+	<button onclick="cdom()" value="Рассчитать">Рассчитать</button>
+</p>
+<p id="costhome">Примерная цена дома "под ключ":<br />1 000 000 руб.</p>
+<!--<p><a href="index.php?option=com_content&amp;view=article&amp;id=13:individualnoe-zhiloe-stroitelstvo&amp;catid=10:napravleniya&amp;Itemid=114"><span style="color: #ff0000;">*Рассчитывается стоимость дома по Канадской технологии</span> </a></p>-->
