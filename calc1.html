@@ -25,6 +25,9 @@
 				p = (1800 + 61 * sq) * costtable[geo][5] * 1000;
 			}
 
+			p = Math.round(p);
+			p = new Intl.NumberFormat('ru-RU').format(p)
+
 			document.getElementById('costhome').innerText = 'Примерная цена дома "под ключ": ' + p + ' р.';
 		} else
 			document.getElementById('costhome').innerText = "Введите площадь дома";
