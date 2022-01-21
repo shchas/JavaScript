@@ -49,4 +49,4 @@ div.innerHTML = "<h1>Hello World!</h1>";
 
 // div.textContent = "Hello";
 
-div.insertAdjacentHTML('beforebegin', '<h2>Hello</h2>')
+div.insertAdjacentHTML('beforebegin', '<h2>Hello</h2>');
